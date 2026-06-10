@@ -13,12 +13,12 @@ GKD 订阅模板, 此仓库方便您直接构建自己订阅, 点击右上角 [U
 - pnpm>=9 <https://pnpm.io/zh/installation>
 - vscode <https://code.visualstudio.com>
 
-安装好后使用模板, 假设您刚刚使用 `Use this template` 创建的仓库是 `https://github.com/username/subscription`
+安装好后使用模板, 假设您刚刚使用 `Use this template` 创建的仓库是 `https://github.com/setteer/gkd-subscription`
 
 接下来下载并初始化环境
 
 ```shell
-git clone https://github.com/username/subscription
+git clone https://github.com/setteer/gkd-subscription
 cd subscription
 pnpm install
 ```
@@ -33,7 +33,7 @@ pnpm install --registry=https://registry.npmmirror.com
 
 至此环境已在 `subscription` 目录下初始化完毕, 使用 vscode 打开目录即可开始开发
 
-接下来下面所有的示例链接都基于 `username/subscription`, 请自行替换后打开
+接下来下面所有的示例链接都基于 `setteer/gkd-subscription`, 请自行替换后打开
 
 `pnpm install` 用于安装依赖, 如果您的 [./package.json](./package.json) 发生变化, 则需要再次运行 `pnpm install`
 
@@ -41,7 +41,7 @@ pnpm install --registry=https://registry.npmmirror.com
 
 如果您无法初始化 nodejs 环境, 那可以直接使用 github 网页编辑文件后在线提交, 点击下面链接即可在线编辑
 
-<https://github.com/username/subscription/edit/main/src/subscription.ts>
+<https://github.com/setteer/gkd-subscription/edit/main/src/subscription.ts>
 
 ![image](https://e.gkd.li/bb539a50-cbdb-4fec-8a93-4a9c5d067de0)
 
@@ -77,7 +77,7 @@ export default defineGkdSubscription({
 
 当提交代码到仓库时, 我们也需要使用 github actions 来帮助自动格式化并修复代码, 因此您需要开启仓库的此项权限
 
-打开 <https://github.com/username/subscription/settings/actions>
+打开 <https://github.com/setteer/gkd-subscription/settings/actions>
 
 然后找到 Workflow permissions 点击 Read and write permissions 然后点击下方的 Save 即可
 
@@ -91,7 +91,7 @@ export default defineGkdSubscription({
 
 我们使用其中的 `build_release.yml` 构建并发布
 
-打开 <https://github.com/username/subscription/actions/workflows/build_release.yml>
+打开 <https://github.com/setteer/gkd-subscription/actions/workflows/build_release.yml>
 
 然后点击右侧的 `Run workflow` 即可运行并发布
 
@@ -107,7 +107,7 @@ https://raw.githubusercontent.com/setteer/gkd-subscription/main/dist/gkd.json5
 
 raw.githubusercontent.com 在大陆的访问常常无法访问
 
-您可以换成 <https://fastly.jsdelivr.net/gh/username/subscription@main/dist/gkd.json5> 加速访问
+您可以换成 <https://fastly.jsdelivr.net/gh/setteer/gkd-subscription@main/dist/gkd.json5> 加速访问
 
 如果无法访问 raw.githubusercontent.com 和 fastly.jsdelivr.net
 
